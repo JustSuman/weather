@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6853/6853873.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Time</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="searchbar">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your city"">
+            <i class=" fa-solid fa-magnifying-glass" onclick="inputEnter()"></i>
+        </div>
+        <div class="location">
+            <span class="city"></span>
+        </div>
+        <div class="date">
+            <!-- <span class="time"></span> -->
+            <span class="month"></span>
+        </div>
+        <div class="weather">
+            <span class="temperature"></span>
+            <div class="climate">
+                <img src="" alt="icon">
+                <span class="description"></span>
+            </div>
+            <span class="wind"></span>
+            <span class="humidity"></span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
