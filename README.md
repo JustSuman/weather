@@ -1,6 +1,6 @@
-[Screenshot from 2023-03-29 12-06-18](https://user-images.githubusercontent.com/118437501/228443951-588d0e08-25d0-43ea-9115-56c09299fec9.png)
+[](https://user-images.githubusercontent.com/118437501/228443951-588d0e08-25d0-43ea-9115-56c09299fec9.png)
 # Weather App
-### This is a weather app that displays current weather information for a given location. The app uses the OpenWeather API to fetch weather data and displays it in an easy-to-read format. 
+This is a weather app that displays current weather information for a given location. The app uses the OpenWeather API to fetch weather data and displays it in an easy-to-read format. 
 
 ## Features
 Display current weather information for a given location, including temperature, humidity, wind speed, and weather description.
