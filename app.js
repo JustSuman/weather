@@ -6,15 +6,20 @@ function time() {
 }
 time()
 
-function weather(city) {
-    let appId = "ff481f559fea02934cdb1cf3a79b991a"
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${appId}`)
-        .then(resp => resp.json())
-        .then(data => {
-            console.log(data)
-            display(data)
-        })
-}
+async function weather(city) {
+    let appId = "ff481f559fea02934cdb1cf3a79b991a";
+    try {
+      const resp = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${appId}`);
+      if (resp.status == 200) {
+        const data = await resp.json();
+        display(data);
+      } else {
+        throw new Error(":( Location not found");
+      }
+    } catch (error) {
+      window.alert("Location not found!!");
+    }
+  }
 function display(data) {
     document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + data.name + "')";
     document.querySelector(".temperature").innerHTML = `${data.main.temp} °C`;
