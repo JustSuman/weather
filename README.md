@@ -1,4 +1,5 @@
-[](https://user-images.githubusercontent.com/118437501/228443951-588d0e08-25d0-43ea-9115-56c09299fec9.png)
+![image](https://user-images.githubusercontent.com/118437501/229270804-e900ed53-8a57-4c31-878b-e4b363210603.png)
+
 # Weather App
 This is a weather app that displays current weather information for a given location. The app uses the OpenWeather API to fetch weather data and displays it in an easy-to-read format. 
 
