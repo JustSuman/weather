@@ -8,34 +8,32 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6853/6853873.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Weather Time</title>
+    <title>WEATHER</title>
 </head>
 
 <body>
-    <div id="loading-message">Loading...</div>
-    <div class="container">
+    <header>
+        <span>Weather Forecast in<br> <span class="city" style="font-size: 1.2rem; color: #ffffff9a;"></span></span>
         <div class="searchbar">
             <i class="fa-solid fa-location-dot"></i>
             <input type="text" placeholder="Enter your city"">
-            <i class=" fa-solid fa-magnifying-glass" onclick="inputEnter()"></i>
+        <i class=" fa-solid fa-magnifying-glass" onclick="inputEnter()"></i>
         </div>
-        <div class="location">
-            <span class="city"></span>
-        </div>
-        <div class="date">
-            <!-- <span class="time"></span> -->
-            <span class="month"></span>
-        </div>
+    </header>
+    <div class="container">
         <div class="weather">
+            <span class="month"></span>
+            <span id="city"></span>
+            <img src="" alt="icon">
             <span class="temperature"></span>
-            <div class="climate">
-                <img src="" alt="icon">
-                <span class="description"></span>
-            </div>
+            <span class="description"></span>
             <span class="wind"></span>
             <span class="humidity"></span>
         </div>
     </div>
+    <footer>image from <a
+            href="https://images.unsplash.com/photo-1679663877752-c00ad7f1c5c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">@here</a>
+    </footer>
     <script src="./app.js"></script>
 </body>
 
